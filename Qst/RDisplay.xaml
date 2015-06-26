@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="Qst.RDisplay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Qst"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <Grid Opacity="0.85">
+        <Pivot >
+            <PivotItem Header="result">
+                <Grid>
+
+                </Grid>
+            </PivotItem>
+
+        </Pivot>
+        <TextBlock Name="que" HorizontalAlignment="Left" Margin="10,81,0,0" TextWrapping="Wrap" Text="Question" VerticalAlignment="Top" Height="42" Width="143" FontSize="20"/>
+        <StackPanel Margin="10,128,231,10">
+            <TextBlock Name="opt1" FontSize="25" Text="" />
+            <TextBlock Name="opt2" FontSize="25" Text="" />
+            <TextBlock Name="opt3" FontSize="25" Text="" />
+            <TextBlock Name="opt4" FontSize="25" Text="" />
+        </StackPanel> 
+        <StackPanel Margin="168,128,0,23">
+            <TextBlock FontSize="25" Name="op1" Text=""/>
+            <TextBlock FontSize="25" Name="op2" Text=""/>
+            <TextBlock FontSize="25" Name="op3" Text=""/>
+            <TextBlock FontSize="25" Name="op4" Text=""/>
+        </StackPanel>
+        <ProgressRing Name="pr" IsActive="True" />
+    </Grid>
+
+</Page>

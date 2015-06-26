@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Qst.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Qst"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <Grid Opacity="0.85">
+        <Pivot Title="User Info">
+            <PivotItem Header="Login">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Left" Margin="10" FontSize="20" Text="Username"/>
+                        <TextBox Name="unames" HorizontalAlignment="Left" Margin="10" Width="200"></TextBox>
+                        <TextBlock HorizontalAlignment="Left" Margin="10" FontSize="20" Text="Password"/>
+                        <PasswordBox Name="pass" HorizontalAlignment="Left" Margin="10" Width="200" />
+                        <Button x:ConnectionId='1' HorizontalAlignment="Center" Margin="30" Content="Submit"                     />
+                    </StackPanel>
+                    <ProgressRing Name="pr" IsActive="False" />
+                     </Grid>
+            </PivotItem>
+            
+        </Pivot>
+
+    </Grid>
+</Page>
+
